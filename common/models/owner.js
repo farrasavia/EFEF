@@ -2,10 +2,10 @@
 'use strict';
 
 module.exports = function(Owner) {
-  Owner.getOwnerByName = function(name, callback) {
+  Owner.getOwnerByKelamin = function(kelamin, callback) {
     new Promise(function(resolve, reject) {
             // find name
-      Owner.find({where: {Nama: {like: name}}}, function(err, result) {
+      Owner.find({where: {JenisKelamin: {like: kelamin}}}, function(err, result) {
         if (err) reject(err);
         if (result === null) {
           err = new Error('User not Found');
@@ -22,16 +22,16 @@ module.exports = function(Owner) {
     });
   };
   Owner.remoteMethod(
-        'getOwnerByName',
+        'getOwnerByKelamin',
     {
-      description: 'get user by name',
+      description: 'get user by kelamin',
       accepts: [
-                {arg: 'name', type: 'string'},
+                {arg: 'jenis kelamin', type: 'string'},
       ],
       returns: {
         arg: 'res', type: 'object', root: true,
       },
-      http: {path: '/getOwnerByName', verb: 'get'},
+      http: {path: '/getOwnerByKelamin', verb: 'get'},
     }
     );
 };
