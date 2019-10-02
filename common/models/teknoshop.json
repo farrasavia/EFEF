@@ -1,0 +1,22 @@
+{
+  "name": "teknoshop",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tekno": {
+      "type": "string",
+      "required": true
+    },
+    "bootcamp": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
