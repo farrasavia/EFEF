@@ -50,5 +50,9 @@
   "admin": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "employee": {
+    "dataSource":"mongodb",
+    "public":true
   }
 }
