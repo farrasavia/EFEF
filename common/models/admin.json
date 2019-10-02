@@ -1,0 +1,30 @@
+{
+    "name": "admin",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "Username": {
+        "type": "string",
+        "required": true
+      },
+      "Password": {
+        "type": "string",
+        "required": true
+      },
+      "TanggalMasuk": {
+        "type": "date",
+        "required": true
+      },
+      "email": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
