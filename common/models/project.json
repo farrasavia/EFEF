@@ -1,28 +1,28 @@
 {
-    "name": "employee",
+    "name": "project",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "Nama": {
+      "NamaProject": {
         "type": "string",
         "required": true
       },
-      "JenisKelamin": {
+      "PJProject": {
         "type": "string",
         "required": true
       },
-      "TanggalLahir": {
+      "TanggalProject": {
         "type": "date",
         "required": true
       },
-      "NoTelepon": {
+      "AlamatProject": {
         "type": "string",
         "required": true
       },
-      "Email": {
+      "TeleponProject": {
         "type": "string",
         "required": true
       }
@@ -32,4 +32,3 @@
     "acls": [],
     "methods": {}
   }
-  
