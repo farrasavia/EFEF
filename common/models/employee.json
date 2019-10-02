@@ -1,0 +1,35 @@
+{
+    "name": "owner",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "Nama": {
+        "type": "string",
+        "required": true
+      },
+      "JenisKelamin": {
+        "type": "string",
+        "required": true
+      },
+      "TanggalLahir": {
+        "type": "date",
+        "required": true
+      },
+      "NoTelepon": {
+        "type": "string",
+        "required": true
+      },
+      "Email": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  
